@@ -12,6 +12,10 @@ The ERD for the MVP is displayed above.
 ## App Design:
 The CRUD application I decided to create was an Event Management System.The application allows 2 specified users to View all upcoming Events, add those Events to their list of Event Bookings and they can also remove those events from their list of event bookings. Trello was very useful in laying out how to structure my project in a step by step process. Akanban template was used as seen here https://trello.com/b/hijDOIxa/kanban-template.
 
+## Risk Assesment:
+<img width="737" alt="image" src="https://user-images.githubusercontent.com/65461503/202199327-db0c3a10-fe18-4579-8e95-c71ad70ef5df.png">
+
+
 
 ## Testing:
 The development environment used was a python3 virtual environment.The virtual environment(venv) allowed for alterations to be made without affecting any pip install that were already on the machine.
