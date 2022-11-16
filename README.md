@@ -6,3 +6,8 @@ The objective of this project was to design and produce a web app for based arou
 The app needed to have CRUD (create, read, update and delete) functionality. 
 The Flask micro-framework used and the informationwas stored in a MySQL database comprised of a minimum of two tables sharing a one-to-many relationship.
 
+<img width="305" alt="Screenshot 2022-11-14 195434" src="https://user-images.githubusercontent.com/65461503/202134138-5d71753c-2e73-4822-8972-331fa2d7b337.png">
+The ERD for the MVP is displayed above.
+
+## App Design:
+The CRUD application I decided to create was an Event Management System.The application allows 2 specified users to View all upcoming Events, add those Events to their list of Event Bookings and they can also remove those events from their list of event bookings. 
