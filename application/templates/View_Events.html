@@ -1,0 +1,35 @@
+<html>
+    <body>
+        <h1>
+            These are all availiable Events
+        </h1>
+        <table>
+            <tr>
+				<th>Event ID&nbsp;</th>
+				<th>Event Name&nbsp;&nbsp;&nbsp;</th>
+				<th>Event description&nbsp;</th>
+				<th>Event Date&nbsp;</th>
+				<th>Event Venue&nbsp;</th>
+			</tr>
+        <tr>
+        {% for Events in jievents %}
+        <td>{{Events.event_id}}</td>
+        <td>{{Events.event_name}}</td>
+        <td>{{Events.event_description}}</td>
+        <td>{{Events.event_date }}</td>
+        <td>{{Events.event_venue}}</td>
+        </tr>
+        {% endfor %}
+        </table>
+        <p>Add Event to a user's bookings below</p>
+        <div class='form'>
+            <form method='POST' action=''>
+                {{ jiform.hidden_tag() }}
+                {{ jiform.Userlist }}
+                {{ jiform.Eventlist }}
+                {{ jiform.booking_date}}
+                {{ jiform.submit }}
+        <!-- End of Form -->
+<!-- End List -->
+    </body>
+</html>
