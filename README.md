@@ -44,6 +44,8 @@ This was done in my testing folder. All the tests passed to achieve an overall t
 
 <img width="303" alt="image" src="https://user-images.githubusercontent.com/65461503/202165709-118a8a54-1c86-4c9f-a3ea-2f5c774eab8e.png">
 
+6.The same actions can be performed for Sarah
+
 
 
 
