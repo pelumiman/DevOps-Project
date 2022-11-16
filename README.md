@@ -20,6 +20,8 @@ Unitesting:is a process in which small pieces of the code are tested to ensure p
 This was done in my testing folder. All the tests passed to achieve an overall test coverage of 100%.
 <img width="740" alt="Screenshot 2022-11-15 161956" src="https://user-images.githubusercontent.com/65461503/202155251-bd2ef7ef-1591-42bb-a680-74093f9ff71d.png">
 
+The test.app.py tested all the routes to ensure they were all working.Some of the tests would ensure the route could successfully receive a response when required to and that the correct actions that were required would occur.
+
 
 ## The App:
 1.Welcome page, Prompts you to choose user
