@@ -24,4 +24,16 @@ This was done in my testing folder. All the tests passed to achieve an overall t
 ## The App:
 1.Welcome page, Prompts you to choose user
 
+<img width="543" alt="image" src="https://user-images.githubusercontent.com/65461503/202164452-e0ea49b2-258b-4d31-98ec-c54a07281856.png">
+
+2.User John is chosen
+
+<img width="422" alt="image" src="https://user-images.githubusercontent.com/65461503/202164578-f36c9f02-70cd-4605-a4f9-991b301d6f5f.png">
+
+3.He has 2 options, check is Events Bookings or View all Events
+
+<img width="784" alt="image" src="https://user-images.githubusercontent.com/65461503/202164912-20fb6c3e-6628-4984-bac0-35d29887bc06.png">
+
+<img width="319" alt="image" src="https://user-images.githubusercontent.com/65461503/202164750-3380be00-6b21-429e-be2f-0912873a6782.png">
+
 
