@@ -1,0 +1,30 @@
+<html>
+<body style="background-color: rgb(254, 254, 254);">
+<h1> Your Event Bookings</h1>
+<html>
+    <table>
+        <tr>
+            <th>Booking ID&nbsp;&nbsp;</th>
+            <th>User ID&nbsp;&nbsp;</th>
+            <th>Event ID&nbsp;&nbsp;</th>
+            <th>Event date&nbsp;&nbsp;</th>
+        </tr>
+    <tr>
+    {% for Events in deventbook %}
+    <td>{{Events.booking_id}}</td>
+    <td>{{Events.event_id}}</td>
+    <td>{{Events.user_id}}</td>
+    <td>{{Events.booking_date}}</td>
+    </tr>
+    {% endfor %}
+    </table>  
+    <p>Delete Event from your bookings below</p>
+    <div class='form'>
+        <form method='POST' action=''>
+            {{ diform.hidden_tag() }}
+            {{ diform.event_id }}
+            {{ diform.submit }}    
+    </body>
+</html>
+</body>
+</html>
