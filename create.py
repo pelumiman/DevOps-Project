@@ -31,4 +31,4 @@ for l in data1:
 for l in data2:
         eventbooking = EventBookings( event_id = l["event_id"], user_id = l["user_id"],booking_date = l["booking_date"])
         db.session.add(eventbooking)
-        db.session.commit()
+        db.session.commit()                                                                                                                                                 

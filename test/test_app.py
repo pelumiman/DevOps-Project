@@ -26,7 +26,9 @@ class TestBase(TestCase):
             db.session.add(user)
             db.session.commit()
         data1 = [{"event_name": "Football wars", "event_description": "4 teams play knockout matches against each other until 1 comes out on top", "event_date":date(2022, 4,14), "event_venue":"Mulhuddart Arena" },
-        {"event_name": "Paint battle", "event_description": "2 teams of 6 play a painnt ball match against each other", "event_date":date(2023, 9,20), "event_venue":"Fort Monty"}]
+        {"event_name": "Paint battle", "event_description": "2 teams of 6 play a painnt ball match against each other", "event_date":date(2023, 9,20), "event_venue":"Fort Monty"},
+        {"event_name": "Black Panther Premier", "event_description": "Red carper for Movie", "event_date":date(2023, 8,12), "event_venue":"Dublin city centre"},
+        {"event_name": "Elcetric Festival", "event_description": "festival with many artists", "event_date":date(2023, 2,27), "event_venue":"Bristol city"}]
         for l in data1:
             event = Events(event_name=l["event_name"], event_description = l["event_description"], event_date = l["event_date"],event_venue = l["event_venue"])
             db.session.add(event)
@@ -48,7 +50,7 @@ class LayoutPage(TestBase):
     def test_layout_get(self):
         response =self.client.get(url_for('layout'))
         self.assertEqual(response.status_code, 200)
-        self.assertIn(b"Welcome to Event Management", response.data)
+        self.assertIn(b"Welcome to Your Event Management System", response.data)
 
 class JohnPage(TestBase):
     def test_john_get(self):
@@ -68,12 +70,13 @@ class Sarah_B_Page(TestBase):
         self.assertEqual(response.status_code, 200)
         self.assertIn(b"Your Event Bookings", response.data)
 
+
 class Sarah_B_P_Page(TestBase):
     def test_sarah_b_get(self):
         response =self.client.post(url_for('View_S_Bookings'),
         follow_redirects = True, data = dict(event_id = 1))
         self.assertEqual(response.status_code, 200)
-        self.assertIn(b"Welcome to Event Management", response.data)
+        self.assertIn(b"Welcome to Your Event Management System", response.data)
 
 class John_B_Page(TestBase):
     def test_john_b_get(self):
@@ -86,7 +89,7 @@ class John_B_P_Page(TestBase):
         response =self.client.post(url_for('View_J_Bookings'),
         follow_redirects = True, data = dict(event_id = 1))
         self.assertEqual(response.status_code, 200)
-        self.assertIn(b"Welcome to Event Management", response.data)
+        self.assertIn(b"Welcome to Your Event Management System", response.data)
 
 class View_E_Page(TestBase):
     def test_view_get(self):
@@ -99,6 +102,6 @@ class View_E_P_Page(TestBase):
         response =self.client.post(url_for('View_Events'),
         follow_redirects = True, data = dict(Userlist = 1, Eventlist = 1))
         self.assertEqual(response.status_code, 200)
-        self.assertIn(b"Welcome to Event Management", response.data)
+        self.assertIn(b"Welcome to Your Event Management System", response.data)
     
         

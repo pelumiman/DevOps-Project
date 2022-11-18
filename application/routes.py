@@ -52,7 +52,7 @@ def View_S_Bookings():
   sieventbook = EventBookings.query.filter_by(user_id=2).all()
   Sdbookingsform = DeleteEventBooking()
   Sdbookingsform.event_id.choices = [(event.event_id,event.event_id) for event in sieventbook]
-#   if Sdbookingsform.validate_on_submit():
+  # if Sdbookingsform.validate_on_submit():
   if request.method == 'POST':
          deleteeventbooking = EventBookings.query.get(Sdbookingsform.event_id.data)
          db.session.delete(deleteeventbooking)
